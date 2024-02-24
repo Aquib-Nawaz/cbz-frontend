@@ -1,0 +1,194 @@
+@import "bootstrap";
+.container-dark{
+    @extend .container;
+    width: 90%;
+}
+.row-dark-1{
+    @extend .row;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    align-items: center;
+    font-weight: 500;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Mochiy Pop P one', sans-serif;
+    background-image: linear-gradient(0deg, #ff1e50 20%, #232882);
+};
+.title{
+    display: grid;
+    place-items: center;
+    height: 120px;
+    font-size: 2rem;
+    font-weight: 700;
+    color:rgb(62, 0, 119);
+    font-family: 'Mochiy Pop P one', sans-serif;
+};
+.sub-title{
+    display: grid;
+    place-items: center;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:rgb(62, 0, 119);
+    font-family: 'Mochiy Pop P one', sans-serif;
+};
+.text{
+    display: grid;
+    place-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-height: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    color:rgb(62, 0, 119);
+    font-family: 'Mochiy Pop P one', sans-serif;
+    border: 0.25px solid rgb(0, 0, 0);
+};
+.wrapper {
+    text-align: center;
+}
+.wrapper ul {
+    // display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* For IE, the outcast */
+    zoom:1;
+    *display: inline;
+}
+.wrapper li {
+    float: left;
+    padding: 2px 5px;
+    border: 1px solid black;
+}
+.hoverTable{
+		width:100%; 
+		border-collapse:collapse; 
+	}
+	.hoverTable td{ 
+		padding:7px; border:rgb(0, 0, 0) 1px solid;
+	}
+    .hoverTable th{ 
+		padding:7px; border:#000000 1.25px solid;
+        background-color: rgb(123, 238, 247);
+	}
+	/* Define the default color for all the table rows */
+	.hoverTable tr{
+		background: rgb(253, 212, 159);
+	}
+	/* Define the hover highlight color for the table row */
+    .hoverTable tr:hover {
+          background-color: rgb(0, 0, 0);
+          color:rgb(247, 140, 0);
+          border-color: rgb(253, 212, 159) 1.25px solid;
+    }
+    .hoverTable th:ho
+    ver {
+        background-color: rgb(0, 0, 0);
+        color:rgb(123, 238, 247);
+        border-color: rgb(123, 238, 247) 1.25px solid;
+  }
+.lr{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.mydiv{
+    @extend .container-dark;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 40%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+
+.text-center{
+	color:#fff;	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+	position:relative;
+	// left:50%;
+	top:50%;
+	// transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:70px 100px;
+    min-width: 40%;
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-image: linear-gradient(to left top ,white, rgb(4, 78, 112) );
+    
+}
+.input-container{
+	position:relative;
+	margin-bottom:30px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:20px;
+	color:white;
+    font-weight: bold;	
+    display: inline-block;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 10px 0;
+  font-size:18px;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.btn{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+	font-weight: bold;
+    // background: linear-gradient(45deg, rgb(19, 2, 68), rgb(233, 17, 42));
+    background: linear-gradient(45deg,  rgb(2, 77, 52) , rgb(241, 86, 120) , rgb(236, 236, 72) );
+	display: inline-block;
+    padding: 20px;
+    text-align: center;
+	padding:20px;
+	text-transform:uppercase;
+	text-decoration: none;
+	color: #fff;
+	cursor:pointer;
+	border-radius: 5px;
+    border-style: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-16px;
+	font-size:16px;
+	
+}
+// a {
+//     color: #FFF;
+//   }
+//   a:hover {
+//      color: #00F
+//   }
